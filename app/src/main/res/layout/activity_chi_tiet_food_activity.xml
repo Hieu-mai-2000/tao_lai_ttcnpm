@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/text"
+    android:background="#E0FAC2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chi_tiet_food_activity">
+
+    <TextView
+        android:id="@+id/activity_CHiTietFood_ten_mon"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="16dp"
+        android:text="Ten mon"
+        android:textAlignment="center"
+        android:textColor="#4CAF50"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/activity_CHiTietFood_hinhanh_food"
+        android:layout_width="251dp"
+        android:layout_height="178dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_CHiTietFood_ten_mon"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <TextView
+        android:id="@+id/activity_CHiTietFood_mo_ta"
+        android:layout_width="414dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="20dp"
+        android:text="mô tả"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_CHiTietFood_hinhanh_food" />
+
+    <TextView
+        android:id="@+id/activity_CHiTietFood_gia_tien"
+        android:layout_width="113dp"
+        android:layout_height="44dp"
+        android:text="0"
+        android:textAlignment="viewStart"
+        android:textColor="#FF9800"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/activity_CHiTietFood_mo_ta" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="43dp"
+        android:layout_height="39dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_CHiTietFood_mo_ta"
+        app:srcCompat="@drawable/raise" />
+
+    <EditText
+        android:id="@+id/activity_CHiTietFood_ghi_chu"
+        android:layout_width="409dp"
+        android:layout_height="74dp"
+        android:ems="10"
+        android:hint="Ghi Chú"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_CHiTietFood_gia_tien" />
+
+    <ImageView
+        android:id="@+id/activity_CHiTietFood_image_giam"
+        android:layout_width="34dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="144dp"
+        android:background="@null"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_CHiTietFood_ghi_chu"
+        app:srcCompat="@drawable/tru" />
+
+    <EditText
+        android:id="@+id/activity_CHiTietFood_number_order"
+        android:layout_width="53dp"
+        android:layout_height="51dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        android:textAlignment="center"
+        android:textColor="#CDDC39"
+        android:textSize="30sp"
+        app:layout_constraintStart_toEndOf="@+id/activity_CHiTietFood_image_giam"
+        app:layout_constraintTop_toBottomOf="@+id/activity_CHiTietFood_ghi_chu" />
+
+    <ImageView
+        android:id="@+id/activity_CHiTietFood_image_tang"
+        android:layout_width="36dp"
+        android:layout_height="38dp"
+        android:background="@null"
+        app:layout_constraintStart_toEndOf="@+id/activity_CHiTietFood_number_order"
+        app:layout_constraintTop_toBottomOf="@+id/activity_CHiTietFood_ghi_chu"
+        app:srcCompat="@drawable/cong" />
+
+    <Button
+        android:id="@+id/activity_CHiTietFood_dat_hang"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="Đặt hàng"
+        android:textColor="#4CAF50"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_CHiTietFood_number_order" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="42dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/activity_CHiTietFood_food_con_lai"
+        app:layout_constraintTop_toBottomOf="@+id/activity_CHiTietFood_mo_ta"
+        app:srcCompat="@drawable/number" />
+
+    <TextView
+        android:id="@+id/activity_CHiTietFood_food_con_lai"
+        android:layout_width="125dp"
+        android:layout_height="0dp"
+        android:text="0"
+        android:textColor="#F44336"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/activity_CHiTietFood_ghi_chu"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/activity_CHiTietFood_mo_ta" />
+</androidx.constraintlayout.widget.ConstraintLayout>

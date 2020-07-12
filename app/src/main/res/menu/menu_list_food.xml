@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Giỏ Hàng"
+        android:orderInCategory="3"
+        android:id="@+id/gio_hang_list_food_menu_list_food"
+        app:showAsAction="always"
+        android:icon="@drawable/gio_hang"
+
+        />
+    <item android:title="Search"
+        android:orderInCategory="1"
+        android:id="@+id/menuSearch_menu_list_food"
+        app:showAsAction="always"
+        android:icon="@drawable/search"
+        />
+
+    <item android:title="Home"
+        android:orderInCategory="2"
+        android:id="@+id/Home_menu_list_food"
+        app:showAsAction="always"
+        android:icon="@drawable/home"
+
+        />
+    <item android:title="Share"
+        android:orderInCategory="6"
+        android:id="@+id/menuShare_menu_list_food"
+        />
+
+    <item android:title="Yêu Thích"
+        android:orderInCategory="5"
+        android:id="@+id/Love_menu_list_food"
+        />
+    <item android:title="Cá Nhân"
+        android:orderInCategory="4"
+        android:id="@+id/personal_menu_list_food"
+        />
+
+</menu>

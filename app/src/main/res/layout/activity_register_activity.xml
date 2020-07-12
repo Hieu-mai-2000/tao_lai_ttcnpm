@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".register_activity">
+
+    <EditText
+        android:id="@+id/Dang_ky_name"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/draw_button"
+        android:ems="10"
+        android:hint="     Họ và Tên"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Dang_ky_email"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/draw_button"
+        android:ems="10"
+        android:hint="     Email"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Dang_ky_matkhau"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="228dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/draw_button"
+        android:ems="10"
+        android:hint="     Mật khẩu"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Dang_ky_nhap_lai_matkhau"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="324dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/draw_button"
+        android:ems="10"
+        android:hint="     Nhập lại mật khẩu"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Dang_ky_number_phone"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="416dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/draw_button"
+        android:ems="10"
+        android:hint="     Số điện thoại"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Dang_ky_Dangky"
+        android:layout_width="142dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/button_change_color"
+        android:text="Đăng Ký"
+        android:textColor="@drawable/text_change_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Dang_ky_number_phone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

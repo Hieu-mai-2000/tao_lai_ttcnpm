@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_dang_nhap"
+    android:alpha="0.6"
+    tools:context=".login_activity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="0dp"
+        android:layout_height="482dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="40dp"
+        android:background="#170E27"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textDangNhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="44dp"
+        android:text="Đăng Nhập"
+        android:textColor="#FFEB3B"
+        android:textSize="36sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+    <EditText
+        android:id="@+id/Main_Email"
+        android:layout_width="290dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textColor="#FFEB3B"
+        android:textColorHighlight="#FFEB3B"
+        android:textColorHint="#FFEB3B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDangNhap" />
+
+    
+    <EditText
+        android:id="@+id/Main_Password"
+        android:layout_width="290dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColor="#FFEB3B"
+        android:textColorHint="#FFEB3B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Main_Email" />
+
+    <CheckBox
+        android:id="@+id/Main_checkBox"
+        android:layout_width="120dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="24dp"
+        android:shadowColor="#FFEB3B"
+        android:text="nhớ mật khẩu"
+        android:textColor="#FBE30C"
+        android:textColorHighlight="#FFEB3B"
+        android:textColorHint="#FFEB3B"
+        android:textColorLink="#FFEB3B"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Main_Password" />
+
+    <Button
+        android:background="@drawable/button_change_color"
+        android:textColor="@drawable/text_change_color"
+        android:id="@+id/Main_login"
+        android:layout_width="139dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="92dp"
+        android:text="Đăng nhập"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Main_Password" />
+
+    <TextView
+        android:textColor="#E8D215"
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="80dp"
+        android:text="tạo tài khoản mới --->"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Main_login" />
+
+    <Button
+        android:id="@+id/Main_register"
+        android:layout_width="105dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="24dp"
+        android:text="đăng ký"
+        android:background="@drawable/button_change_color"
+        android:textColor="@drawable/text_change_color"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/Main_login" />
+
+    <Button
+        android:id="@+id/Main_forget_pass"
+        android:layout_width="135dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="12dp"
+        android:background="@null"
+        android:text="Quên Mật Khẩu"
+        android:textColor="#FFEB3B"
+        app:layout_constraintStart_toEndOf="@+id/Main_checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/Main_Password" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
