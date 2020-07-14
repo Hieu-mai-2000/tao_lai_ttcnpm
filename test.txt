@@ -1,1 +1,66 @@
-gh aeuleuti
+commit 4b849730c4c2746c05ef90b571ef0eff84dcfbf1 (HEAD -> master, origin/master)
+Author: hieumai <hieu.mainguyenminh@hcmut.edu.vn>
+Date:   Sun Jul 12 20:24:36 2020 +0700
+
+    add view register
+
+commit 2f566a621019b5f6c084afc75433b0aeaaabeb6a
+Author: hieumai <hieu.mainguyenminh@hcmut.edu.vn>
+Date:   Sun Jul 12 20:23:40 2020 +0700
+
+    repair element food
+
+commit 42f833e93dd5bc2dd060b179bf74da93f82dfc6e
+Author: hieumai <hieu.mainguyenminh@hcmut.edu.vn>
+Date:   Sun Jul 12 20:23:11 2020 +0700
+
+    repair login
+
+commit 19d93e67211142f0a23b779159fa3fa263885217
+Author: hieumai <hieu.mainguyenminh@hcmut.edu.vn>
+Date:   Sun Jul 12 20:21:58 2020 +0700
+
+    add element detail food
+
+commit a054ecfd03ac263e7efd4c9714b8b513a7b0f834
+Author: hieumai <hieu.mainguyenminh@hcmut.edu.vn>
+Date:   Sun Jul 12 20:19:43 2020 +0700
+
+    add view food
+
+commit a6313ec45c17b0e987e75dad175ffbfc52ccbcb8
+Author: hieumai <hieu.mainguyenminh@hcmut.edu.vn>
+Date:   Sun Jul 12 20:19:09 2020 +0700
+
+    add button login
+
+commit 895deb7a298eb29f854ec4aa416847512b9913c6
+Author: hieumai <hieu.mainguyenminh@hcmut.edu.vn>
+Date:   Sun Jul 12 20:17:47 2020 +0700
+
+    add view register
+
+commit 127dc158e5b3d75b1ecc6b68777d518e1857ab9e
+Author: hieumai <hieu.mainguyenminh@hcmut.edu.vn>
+Date:   Sun Jul 12 20:16:40 2020 +0700
+
+    add view login
+
+commit 176a6c36752a61d730eebb57ec60ef8e89840db1
+Author: hieumai <hieu.mainguyenminh@hcmut.edu.vn>
+Date:   Sun Jul 12 20:13:29 2020 +0700
+
+    add view menu
+
+commit 824c1dd86a09fd30e17db79d0a000f85010e88e0
+Author: hieumai <hieu.mainguyenminh@hcmut.edu.vn>
+Date:   Sun Jul 12 20:11:20 2020 +0700
+
+    add hien thi menu
+
+commit 66b565b2eef972ac691b6e971e334a521f8d87d5
+Author: hieumai <hieu.mainguyenminh@hcmut.edu.vn>
+Date:   Sun Jul 12 18:45:08 2020 +0700
+
+    add demo app
+
