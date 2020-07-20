@@ -7,7 +7,15 @@ public class class_gio_hang implements Serializable {
     private String tenmon,ghichu;
     private String hinhmon;
 
-    public class_gio_hang(int id,String tenmon ,int tongTienmonan,int somondat,String ghichu,String hinhmon) {
+    public class_gio_hang(String hinhmon,String tenmon,String ghichu,int somondat, int tongTienmonan) {
+        this.somondat = somondat;
+        this.tongTienmonan = tongTienmonan;
+        this.tenmon = tenmon;
+        this.ghichu = ghichu;
+        this.hinhmon = hinhmon;
+    }
+
+    public class_gio_hang(int id, String tenmon , int tongTienmonan, int somondat, String ghichu, String hinhmon) {
         this.id = id;
         this.hinhmon = hinhmon;
         this.somondat = somondat;

@@ -14,7 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".update_quay_hang"></activity>
+        <activity android:name=".chi_tiet_history_activity"></activity>
+        <activity android:name=".History_activity" />
+        <activity android:name=".update_quay_hang" />
         <activity android:name=".amin_login" />
         <activity android:name=".login_activity">
             <intent-filter>

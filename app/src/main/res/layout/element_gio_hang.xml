@@ -8,7 +8,7 @@
 
 
     <ImageView
-        android:id="@+id/element_gio_hang_hinh_mon"
+        android:id="@+id/element_chi_tiet_history_image"
         android:layout_width="123dp"
         android:layout_height="140dp"
         android:layout_marginStart="12dp"
@@ -18,7 +18,7 @@
         app:srcCompat="@drawable/quay_hang_bbq" />
 
     <TextView
-        android:id="@+id/element_gio_hang_ten_mon"
+        android:id="@+id/element_chi_tiet_history_name"
         android:layout_width="274dp"
         android:layout_height="67dp"
         android:layout_weight="1"
@@ -27,11 +27,11 @@
         android:textColor="#4CAF50"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/element_gio_hang_hinh_mon"
+        app:layout_constraintStart_toEndOf="@+id/element_chi_tiet_history_image"
         app:layout_constraintTop_toBottomOf="@+id/element_gio_hang_image_xoa" />
 
     <TextView
-        android:id="@+id/element_gio_hang_total_raise_mon"
+        android:id="@+id/element_chi_tiet_history_number"
         android:layout_width="197dp"
         android:layout_height="39dp"
         android:layout_weight="1"
@@ -39,7 +39,7 @@
         android:textColor="#CDDC39"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/element_gio_hang_ten_mon" />
+        app:layout_constraintTop_toBottomOf="@+id/element_chi_tiet_history_name" />
 
 
     <ImageView
@@ -49,7 +49,7 @@
         android:layout_marginTop="8dp"
         android:layout_weight="1"
         app:layout_constraintEnd_toStartOf="@+id/element_gio_hang_so_luong_dat"
-        app:layout_constraintTop_toBottomOf="@+id/element_gio_hang_total_raise_mon"
+        app:layout_constraintTop_toBottomOf="@+id/element_chi_tiet_history_number"
         app:srcCompat="@drawable/tru" />
 
     <EditText
@@ -63,7 +63,7 @@
         android:textAlignment="center"
         android:textSize="24sp"
         app:layout_constraintEnd_toStartOf="@+id/element_gio_hang_image_tang"
-        app:layout_constraintTop_toBottomOf="@+id/element_gio_hang_total_raise_mon" />
+        app:layout_constraintTop_toBottomOf="@+id/element_chi_tiet_history_number" />
 
     <ImageView
         android:id="@+id/element_gio_hang_image_tang"
@@ -73,7 +73,7 @@
         android:layout_marginEnd="48dp"
         android:layout_weight="1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/element_gio_hang_total_raise_mon"
+        app:layout_constraintTop_toBottomOf="@+id/element_chi_tiet_history_number"
         app:srcCompat="@drawable/cong" />
 
     <EditText
@@ -84,7 +84,7 @@
         android:inputType="textPersonName"
         android:text="Ghi Chú"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/element_gio_hang_hinh_mon" />
+        app:layout_constraintTop_toBottomOf="@+id/element_chi_tiet_history_image" />
 
     <ImageView
         android:id="@+id/element_gio_hang_image_xoa"
@@ -100,8 +100,8 @@
         android:id="@+id/imageView"
         android:layout_width="29dp"
         android:layout_height="33dp"
-        app:layout_constraintEnd_toStartOf="@+id/element_gio_hang_total_raise_mon"
-        app:layout_constraintTop_toBottomOf="@+id/element_gio_hang_ten_mon"
+        app:layout_constraintEnd_toStartOf="@+id/element_chi_tiet_history_number"
+        app:layout_constraintTop_toBottomOf="@+id/element_chi_tiet_history_name"
         app:srcCompat="@drawable/raise" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

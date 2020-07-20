@@ -44,14 +44,14 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<class_quay_hang> arrayQuayHang;
     Adapter_quay_hang adapter;
 
-    String urlGetDataQuayHang="http://10.228.196.129:1234/orderfood/quay_hang.php";
-    String urlGetDataKFC="http://10.228.196.129:1234/orderfood/list_food/KFC.php";
-    String urlGetDataBBQ="http://10.228.196.129:1234/orderfood/list_food/BBQ.php";
+    String urlGetDataQuayHang="http://172.20.3.26:1234/orderfood/quay_hang.php";
+    String urlGetDataKFC="http://172.20.3.26:1234/orderfood/list_food/KFC.php";
+    String urlGetDataBBQ="http://172.20.3.26:1234/orderfood/list_food/BBQ.php";
     //String urlGetDataBURGER_KING="http://172.20.6.225:1234/orderfood/list_food/BURGER_KING.php";
     //String urlGetDataJOLLIBEE="http://172.20.6.225:1234/orderfood/list_food/JOLLIBEE.php";
     //String urlGetDataMCDONAL="http://172.20.6.225:1234/orderfood/list_food/MCDONAL.php";
-    String urlGetDataGongCha="http://10.228.196.129:1234/orderfood/list_food/GongCha.php";
-    String urlGetDataPIZZA_HUT="http://10.228.196.129:1234/orderfood/list_food/PIZZA_HUT.php";
+    String urlGetDataGongCha="http://172.20.3.26:1234/orderfood/list_food/GongCha.php";
+    String urlGetDataPIZZA_HUT="http://172.20.3.26:1234/orderfood/list_food/PIZZA_HUT.php";
 
 
 
@@ -154,6 +154,9 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if(item.getItemId() == R.id.gio_hang_list_food){
             Intent intent = new Intent(MainActivity.this,gio_hang_activity.class);
+            startActivity(intent);
+        }else if(item.getItemId() == R.id.lich_su_quay_hang){
+            Intent intent = new Intent(MainActivity.this,History_activity.class);
             startActivity(intent);
         }
         return super.onOptionsItemSelected(item);

@@ -34,12 +34,13 @@ public class login_activity extends AppCompatActivity {
     EditText email,password;
     CheckBox cbRemember;
     String Email="" , PassWord="";//chuỗi dùng để lấy dữ liệu trả về từ "đăng ký"
+int id_KH=0;
 
     ArrayList<String> check_email = new ArrayList<String>();
     ArrayList<String> check_password = new ArrayList<String>();
-    private  static String URL_LOGIN ="http://10.228.196.129:1234/orderfood/Person/loginCustomer.php";
-    String urlInsert = "http://10.228.196.129:1234/orderfood/Person/checkInFor.php";
-
+    private  static String URL_LOGIN ="http://172.20.3.26:1234/orderfood/Person/loginCustomer.php";
+    String urlInsert = "http://172.20.3.26:1234/orderfood/Person/checkInFor.php";
+    String urlGetId_Customer = "http://172.20.3.26:1234/orderfood/Person/get_customer.php";
 
     SharedPreferences sharedPreferences;
 
@@ -116,9 +117,14 @@ private void login(String url, final String username , final String pass) {
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
+
                         if(response.contains("1")){
-                            Toast.makeText(login_activity.this,
+
+                          Toast.makeText(login_activity.this,
                                     "Đăng Nhập Thành Công", Toast.LENGTH_SHORT).show();
+
+                            //Lưu dữ liệu khi email vào Ram để gio_hang_activity sử dụng
+                            sharedPreferences.edit().putString("email",email.getText().toString().trim()).commit();
                             /*dùng để kiểm tra khi thoát ra vẫn lưu giá trị*/
                             if (cbRemember.isChecked()) {
                                 SharedPreferences.Editor editor = sharedPreferences.edit();

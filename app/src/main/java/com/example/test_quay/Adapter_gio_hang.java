@@ -62,11 +62,11 @@ public class Adapter_gio_hang extends BaseAdapter {
             view = inflater.inflate(Layout,null);
             hoder = new ViewHoder();
             //anh xa view
-            hoder.tenmon = (TextView) view.findViewById(R.id.element_gio_hang_ten_mon);
-            hoder.tongTienmonan = (TextView) view.findViewById(R.id.element_gio_hang_total_raise_mon);
+            hoder.tenmon = (TextView) view.findViewById(R.id.element_chi_tiet_history_name);
+            hoder.tongTienmonan = (TextView) view.findViewById(R.id.element_chi_tiet_history_number);
             hoder.hinhNutTang = (ImageView) view.findViewById(R.id.element_gio_hang_image_tang);
             hoder.hinhNutGiam = (ImageView) view.findViewById(R.id.element_gio_hang_image_tru);
-            hoder.hinhmon = (ImageView) view.findViewById(R.id.element_gio_hang_hinh_mon);
+            hoder.hinhmon = (ImageView) view.findViewById(R.id.element_chi_tiet_history_image);
             hoder.ghichu = (EditText) view.findViewById(R.id.element_gio_hang_ghi_chu);
             hoder.somondat = (EditText) view.findViewById(R.id.element_gio_hang_so_luong_dat);
             hoder.hinhNutXoa = (ImageView) view.findViewById(R.id.element_gio_hang_image_xoa);

@@ -29,7 +29,7 @@ import java.util.regex.Pattern;
 
 public class register_activity extends AppCompatActivity {
 
-    String urlInsert = "http://10.228.196.129:1234/orderfood/Person/customer.php";
+    String urlInsert = "http://172.20.3.26:1234/orderfood/Person/customer.php";
 
     EditText textInputPassword,textInputEmail,textInputUsername;
     EditText nhap_lai_matkhau,number_phone;

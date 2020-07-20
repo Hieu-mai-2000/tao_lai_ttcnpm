@@ -1,0 +1,1 @@
+để kết nối được với mySQL thông qua android thì đưa foder "orderfood" vào phần 'lampp/htdocs' của chương trình XAMPP
