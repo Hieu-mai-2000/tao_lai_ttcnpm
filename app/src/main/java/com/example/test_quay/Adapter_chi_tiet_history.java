@@ -74,11 +74,12 @@ public class Adapter_chi_tiet_history extends BaseAdapter {
             //gan gia tri
             final class_gio_hang food = gio_hang.get(i);
 
-            Picasso.get().load(food.getHinhmon()).into(hoder.hinhmon);
-            hoder.tenmon.setText(food.getTenmon());
-            hoder.ghichu.setText(food.getGhichu());
-            hoder.somondat.setText(food.getSomondat()+"");
-            hoder.tongTienmonan.setText(String.valueOf(food.getTongTienmonan()) );
+                Picasso.get().load(food.getHinhmon()).into(hoder.hinhmon);
+                hoder.tenmon.setText(food.getTenmon());
+                hoder.ghichu.setText(food.getGhichu());
+                hoder.somondat.setText(food.getSomondat()+"");
+                hoder.tongTienmonan.setText(String.valueOf(food.getTongTienmonan()) );
+
 
             //gan cái animation---->gán hiệu ứng
             Animation animation = AnimationUtils.loadAnimation(context,R.anim.scale_list_hieu_ung);

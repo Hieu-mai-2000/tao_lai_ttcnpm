@@ -31,8 +31,8 @@ public class amin_login extends AppCompatActivity {
     ArrayList<class_quay_hang> arrayQuayHang;
     Adapter_amin_quay_hang adapter;
 
-    String urlGetDataQuayHang="http://10.228.196.129:1234/orderfood/quay_hang.php";
-    String urlDelete="http://10.228.196.129:1234/orderfood/Person/delete_quay_hang.php";
+    String urlGetDataQuayHang="http://172.20.3.171:1234/orderfood/quay_hang.php";
+    String urlDelete="http://172.20.3.171:1234/orderfood/Person/delete_quay_hang.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

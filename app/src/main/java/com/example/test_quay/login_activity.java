@@ -33,14 +33,17 @@ public class login_activity extends AppCompatActivity {
     Button Dangky,Login;
     EditText email,password;
     CheckBox cbRemember;
+    int id_KH = 0;
+    //String Cong_mang = "172.20.3.171";
+
     String Email="" , PassWord="";//chuỗi dùng để lấy dữ liệu trả về từ "đăng ký"
-int id_KH=0;
 
     ArrayList<String> check_email = new ArrayList<String>();
     ArrayList<String> check_password = new ArrayList<String>();
-    private  static String URL_LOGIN ="http://172.20.3.26:1234/orderfood/Person/loginCustomer.php";
-    String urlInsert = "http://172.20.3.26:1234/orderfood/Person/checkInFor.php";
-    String urlGetId_Customer = "http://172.20.3.26:1234/orderfood/Person/get_customer.php";
+    private  static String URL_LOGIN ="http://172.20.3.171:1234/orderfood/Person/loginCustomer.php";
+   // String urlInsert = "http://172.20.3.26:1234/orderfood/Person/checkInFor.php";
+   // String urlGetId_Customer = "http://172.20.3.26:1234/orderfood/Person/get_customer.php";
+    String urlGetId_KH = "http://172.20.3.171:1234/orderfood/Person/get_id_KH.php";
 
     SharedPreferences sharedPreferences;
 
@@ -50,13 +53,11 @@ int id_KH=0;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_activity);
 
-
-        //dung de luu tru gia tri
-
         anhxa();
 
         //taọ vùng dữ liệu lưu giá trị
         sharedPreferences = getSharedPreferences("dataLogin", MODE_PRIVATE);
+        //sharedPreferences.edit().putString("Cong_mang",Cong_mang).commit();
 
         //nếu có dữ liệu trả về từ "đăng ký"
         Intent intent_login = getIntent();
@@ -91,14 +92,12 @@ int id_KH=0;
         Login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //login(URL_LOGIN);
                 String username = email.getText().toString();
                 String pass = password.getText().toString();
                 login(URL_LOGIN,username,pass);
 
             }
         });
-
 
 
     }
@@ -110,7 +109,6 @@ int id_KH=0;
             password = (EditText) findViewById(R.id.Main_Password);
             cbRemember = (CheckBox) findViewById(R.id.Main_checkBox);
         }
-
 
 private void login(String url, final String username , final String pass) {
         StringRequest request = new StringRequest(Request.Method.POST, url,
@@ -125,6 +123,8 @@ private void login(String url, final String username , final String pass) {
 
                             //Lưu dữ liệu khi email vào Ram để gio_hang_activity sử dụng
                             sharedPreferences.edit().putString("email",email.getText().toString().trim()).commit();
+                            //Lưu dữ liệu khi id_KH vào Ram để gio_hang_activity sử dụng
+                            GetId_KH(urlGetId_KH);
                             /*dùng để kiểm tra khi thoát ra vẫn lưu giá trị*/
                             if (cbRemember.isChecked()) {
                                 SharedPreferences.Editor editor = sharedPreferences.edit();
@@ -144,6 +144,8 @@ private void login(String url, final String username , final String pass) {
                             //test thu amin
                             if(username.contains("amin@") && pass.contains("123")){
                                 startActivity(new Intent(login_activity.this,amin_login.class));
+                            }else if(username.contains("daubep") && pass.contains("1")){
+                                startActivity(new Intent(login_activity.this,chef_activity.class));
                             }else{
                                 //hiện ra giao diện quay_hang
                                 Intent intent = new Intent(login_activity.this, MainActivity.class);
@@ -178,6 +180,37 @@ private void login(String url, final String username , final String pass) {
         };
         Volley.newRequestQueue(this).add(request);
 }
+
+    private  void GetId_KH(String url){
+        RequestQueue requestQueue = Volley.newRequestQueue(this);
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, url,
+                new Response.Listener<String>() {
+                    @Override
+                    public void onResponse(String response) {
+                        if(response.equals("fail")){
+                            Toast.makeText(login_activity.this, "Loi he thong", Toast.LENGTH_SHORT).show();
+                        }else{
+                            sharedPreferences.edit().putString("id_KH",response).commit();
+                        }
+                    }
+                },
+                new Response.ErrorListener() {
+                    @Override
+                    public void onErrorResponse(VolleyError error) {
+                        Toast.makeText(login_activity.this, "xay ra loi qua trinh", Toast.LENGTH_SHORT).show();
+                    }
+                }
+        ){
+            @Override
+            protected Map<String, String> getParams() throws AuthFailureError {
+                Map<String,String> params = new HashMap<>();
+                params.put("email",email.getText().toString().trim());
+                return params;
+            }
+        };
+        requestQueue.add(stringRequest);
+
+    }
 
 
 }

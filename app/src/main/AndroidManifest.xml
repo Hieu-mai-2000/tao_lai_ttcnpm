@@ -14,7 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".chi_tiet_history_activity"></activity>
+        <activity android:name=".chi_tiet_food_chef_activity"></activity>
+        <activity android:name=".chef_activity" />
+        <activity android:name=".chi_tiet_history_activity" />
         <activity android:name=".History_activity" />
         <activity android:name=".update_quay_hang" />
         <activity android:name=".amin_login" />

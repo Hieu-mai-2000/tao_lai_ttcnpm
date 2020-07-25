@@ -26,7 +26,7 @@ public class update_quay_hang extends AppCompatActivity {
     Button capNHap,huy;
 
     int id=0;
-    String urlUpDate = "http://172.20.3.26:1234/orderfood/Person/update_quay_hang_amin.php";
+    String urlUpDate = "http://172.20.3.171:1234/orderfood/Person/update_quay_hang_amin.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

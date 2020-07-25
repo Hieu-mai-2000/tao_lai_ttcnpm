@@ -21,6 +21,7 @@ public class class_list_food implements Serializable {
     }
     // kết thúc thằng hiển thị thời gian//
 
+
     public class_list_food(int id, String tenmon, int gia, int soluong, String hinhanh) {
         this.id = id;
         this.hinhanh = hinhanh;

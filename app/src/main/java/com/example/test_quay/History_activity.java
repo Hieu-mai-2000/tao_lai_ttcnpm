@@ -31,7 +31,7 @@ public class History_activity extends AppCompatActivity {
     GridView GrListFood;
     ArrayList<class_list_food> arrayHistory;
     Adapter_history adapter;
-    String url = "http://172.20.3.26:1234/orderfood/History_customer.php";
+    String url = "http://172.20.3.171:1234/orderfood/History_customer.php";
     SharedPreferences sharedPreferences;
 
     @Override
