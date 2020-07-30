@@ -30,9 +30,9 @@ public class amin_login extends AppCompatActivity {
     ListView lvQuayHang;
     ArrayList<class_quay_hang> arrayQuayHang;
     Adapter_amin_quay_hang adapter;
-
-    String urlGetDataQuayHang="http://172.20.3.171:1234/orderfood/quay_hang.php";
-    String urlDelete="http://172.20.3.171:1234/orderfood/Person/delete_quay_hang.php";
+    String IP_port = "http://192.168.1.7:8888/";
+    String urlGetDataQuayHang= IP_port + "orderfood/quay_hang.php";
+    String urlDelete= IP_port + "orderfood/Person/delete_quay_hang.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

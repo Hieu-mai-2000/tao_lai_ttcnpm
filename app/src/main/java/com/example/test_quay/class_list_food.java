@@ -7,22 +7,9 @@ public class class_list_food implements Serializable {
     private  int id;
     private String hinhanh,tenmon;
     private int gia,soluong;
-    private String Time;
-    //làm riêng cho thằng hiển thị thời gian//
-    public class_list_food(String time) {
-        Time = time;
-    }
-
-    public String getTime() {
-        return Time;
-    }
-    public void setTime(String time) {
-        Time = time;
-    }
-    // kết thúc thằng hiển thị thời gian//
 
 
-    public class_list_food(int id, String tenmon, int gia, int soluong, String hinhanh) {
+    public class_list_food(int id,String tenmon,int gia,int soluong, String hinhanh) {
         this.id = id;
         this.hinhanh = hinhanh;
         this.tenmon = tenmon;

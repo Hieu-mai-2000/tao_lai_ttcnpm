@@ -84,8 +84,8 @@ public class Adapter_list_food extends BaseAdapter {
         hoder.soluongmon.setText(food.getSoluong()+"");
 
 //        //gan cái animation---->gán hiệu ứng
-        Animation animation = AnimationUtils.loadAnimation(context,R.anim.scale_list_hieu_ung);
-        view.startAnimation(animation);
+//        Animation animation = AnimationUtils.loadAnimation(context,R.anim.scale_list_hieu_ung);
+//        view.startAnimation(animation);
         return view;
     }
 }

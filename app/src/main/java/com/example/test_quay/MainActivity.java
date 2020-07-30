@@ -6,7 +6,6 @@ import androidx.core.app.ActivityCompat;
 
 import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -44,17 +43,15 @@ public class MainActivity extends AppCompatActivity {
     ListView lvQuayHang;
     ArrayList<class_quay_hang> arrayQuayHang;
     Adapter_quay_hang adapter;
-    SharedPreferences sharedPreferences;
-
-
-    String urlGetDataQuayHang="http://172.20.3.171:1234/orderfood/quay_hang.php";
-    String urlGetDataKFC="http://172.20.3.171:1234/orderfood/list_food/KFC.php";
-    String urlGetDataBBQ="http://172.20.3.171:1234/orderfood/list_food/BBQ.php";
+    String IP_port = "http://192.168.1.7:8888/";
+    String urlGetDataQuayHang= IP_port + "orderfood/quay_hang.php";
+    String urlGetDataKFC= IP_port + "orderfood/list_food/KFC.php";
+    String urlGetDataBBQ= IP_port + "orderfood/list_food/BBQ.php";
     //String urlGetDataBURGER_KING="http://172.20.6.225:1234/orderfood/list_food/BURGER_KING.php";
     //String urlGetDataJOLLIBEE="http://172.20.6.225:1234/orderfood/list_food/JOLLIBEE.php";
     //String urlGetDataMCDONAL="http://172.20.6.225:1234/orderfood/list_food/MCDONAL.php";
-    String urlGetDataGongCha="http://172.20.3.171:1234/orderfood/list_food/GongCha.php";
-    String urlGetDataPIZZA_HUT="http://172.20.3.171:1234/orderfood/list_food/PIZZA_HUT.php";
+    String urlGetDataGongCha= IP_port + "orderfood/list_food/GongCha.php";
+    String urlGetDataPIZZA_HUT= IP_port +"orderfood/list_food/PIZZA_HUT.php";
 
 
 
@@ -67,8 +64,6 @@ public class MainActivity extends AppCompatActivity {
         arrayQuayHang = new ArrayList<>();
         adapter = new Adapter_quay_hang(this,R.layout.element_quay_hang,arrayQuayHang);
         lvQuayHang.setAdapter(adapter);
-        //taọ vùng dữ liệu lưu giá trị
-        sharedPreferences = getSharedPreferences("dataLogin", MODE_PRIVATE);
 
 
         GetListFood();// nhấn vào sẽ hiện ra danh sách món
@@ -137,7 +132,7 @@ public class MainActivity extends AppCompatActivity {
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        Toast.makeText(MainActivity.this, error.toString(), Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "Loi", Toast.LENGTH_SHORT).show();
                     }
                 }
         );
@@ -159,9 +154,6 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         if(item.getItemId() == R.id.gio_hang_list_food){
             Intent intent = new Intent(MainActivity.this,gio_hang_activity.class);
-            startActivity(intent);
-        }else if(item.getItemId() == R.id.lich_su_quay_hang){
-            Intent intent = new Intent(MainActivity.this,History_activity.class);
             startActivity(intent);
         }
         return super.onOptionsItemSelected(item);
