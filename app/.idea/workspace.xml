@@ -12,7 +12,90 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc9f754b-a7f3-4661-b12b-588e89369f8d" name="Default Changelist" comment="" />
+    <list default="true" id="fc9f754b-a7f3-4661-b12b-588e89369f8d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/ic_baseline_favorite_border_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/ic_baseline_search_24.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/res/drawable/ic_baseline_shopping_cart_24.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/render.experimental.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/render.experimental.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/runConfigurations.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/runConfigurations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_activity_activity_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_arch_core_core_runtime_2_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_coordinatorlayout_coordinatorlayout_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_core_core_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_customview_customview_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_drawerlayout_drawerlayout_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_fragment_fragment_1_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_common_2_1_0_jar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_2_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_livedata_core_2_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_runtime_2_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_lifecycle_lifecycle_viewmodel_2_1_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_0_0_aar.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_recyclerview_recyclerview_1_1_0_aar.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__androidx_transition_transition_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Gradle__com_google_android_material_material_1_0_0_aar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/test_quay/Adapter_list_food.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/test_quay/Adapter_quay_hang.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/test_quay/Chi_tiet_payment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/test_quay/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/test_quay/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/test_quay/gio_hang_activity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/test_quay/gio_hang_activity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/test_quay/list_food.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/test_quay/list_food.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_list_food.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_list_food.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/element_list_food.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/element_list_food.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/layout/element_quay_hang.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/layout/element_quay_hang.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/menu/menu_list_food.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/menu/menu_list_food.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/colors.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/colors.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../connect_mySQL/android/connect.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../connect_mySQL/android/delete.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../connect_mySQL/android/demo.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../connect_mySQL/android/getdata.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../connect_mySQL/android/imformation_customer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../connect_mySQL/android/insert.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../connect_mySQL/android/test.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../connect_mySQL/android/update.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../connect_mySQL/android/update_quay_hang_amin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../connect_mySQL/huong_dan.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../connect_mySQL/orderfood/History.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../connect_mySQL/orderfood/History_customer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../connect_mySQL/orderfood/Person/checkInFor.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../connect_mySQL/orderfood/Person/customer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../connect_mySQL/orderfood/Person/delete_quay_hang.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../connect_mySQL/orderfood/Person/get_customer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../connect_mySQL/orderfood/Person/imformation_customer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../connect_mySQL/orderfood/Person/loginCustomer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../connect_mySQL/orderfood/Person/update_quay_hang_amin.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../connect_mySQL/orderfood/detail_history_customer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../connect_mySQL/orderfood/image/quay_hang_bbq.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../connect_mySQL/orderfood/image/quay_hang_burger_king.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../connect_mySQL/orderfood/image/quay_hang_jollibbee.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../connect_mySQL/orderfood/image/quay_hang_kfc.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../connect_mySQL/orderfood/image/quay_hang_mcdonal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../connect_mySQL/orderfood/image/quay_hang_pizza_hut.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../connect_mySQL/orderfood/list_food/BBQ.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../connect_mySQL/orderfood/list_food/BURGER_KING.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../connect_mySQL/orderfood/list_food/GongCha.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../connect_mySQL/orderfood/list_food/JOLLIBEE.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../connect_mySQL/orderfood/list_food/KFC.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../connect_mySQL/orderfood/list_food/MCDONAL.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../connect_mySQL/orderfood/list_food/PIZZA_HUT.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../connect_mySQL/orderfood/list_food/untitled" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../connect_mySQL/orderfood/quay_hang.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../connect_mySQL/orderfood/test_history.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../testgit.txt" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,11 +122,19 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="resourceFile" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1efnlmb5lcHj4u0UoA1Wk4n9uCS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -51,6 +142,7 @@
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -140,30 +232,97 @@
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="286" y="144" key="#PSD" timestamp="1594726314948">
+    <state x="286" y="144" key="#PSD" timestamp="1596542447610">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="286" y="144" key="#PSD/0.0.1536.824@0.0.1536.824" timestamp="1594726314948" />
-    <state width="1340" height="195" key="GridCell.Tab.0.bottom" timestamp="1596100761979">
+    <state x="286" y="144" key="#PSD/0.0.1536.824@0.0.1536.824" timestamp="1596542447610" />
+    <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1596628681774">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1340" height="195" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596100761979" />
-    <state width="1340" height="195" key="GridCell.Tab.0.center" timestamp="1596100761979">
+    <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1596628681774" />
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1596632243087">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1340" height="195" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1596100761979" />
-    <state width="1340" height="195" key="GridCell.Tab.0.left" timestamp="1596100761979">
+    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1596632243087" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596684070383">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1340" height="195" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1596100761979" />
-    <state width="1340" height="195" key="GridCell.Tab.0.right" timestamp="1596100761979">
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1596684070383" />
+    <state x="349" y="167" key="AndroidCreateResourceDirectoryDialog" timestamp="1596603628115">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1340" height="195" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1596100761979" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1596095598002">
+    <state x="349" y="167" key="AndroidCreateResourceDirectoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1596603628115" />
+    <state x="349" y="167" key="AndroidCreateResourceFileDialog" timestamp="1596546127141">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1596095598002" />
+    <state x="349" y="167" key="AndroidCreateResourceFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1596546127141" />
+    <state x="627" y="225" key="AndroidCreateXmlResourceDialog" timestamp="1596621166877">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="627" y="225" key="AndroidCreateXmlResourceDialog/0.0.1536.824@0.0.1536.824" timestamp="1596621166877" />
+    <state x="624" y="177" key="AndroidProcessChooserDialog" timestamp="1596682571417">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="624" y="177" key="AndroidProcessChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1596682571417" />
+    <state width="431" height="466" key="DebuggerActiveHint" timestamp="1596682640903">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="431" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1596682640903" />
+    <state x="449" y="167" key="Downloadable.Font.Dialog.Size" timestamp="1596621598066">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="449" y="167" key="Downloadable.Font.Dialog.Size/0.0.1536.824@0.0.1536.824" timestamp="1596621598066" />
+    <state width="1491" height="260" key="GridCell.Tab.0.bottom" timestamp="1596682669788">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1491" height="260" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596682669788" />
+    <state width="1491" height="260" key="GridCell.Tab.0.center" timestamp="1596682669787">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1491" height="260" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1596682669787" />
+    <state width="1491" height="260" key="GridCell.Tab.0.left" timestamp="1596682669787">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1491" height="260" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1596682669787" />
+    <state width="1491" height="260" key="GridCell.Tab.0.right" timestamp="1596682669788">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1491" height="260" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1596682669788" />
+    <state width="1491" height="260" key="GridCell.Tab.1.bottom" timestamp="1596682669788">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1491" height="260" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596682669788" />
+    <state width="1491" height="260" key="GridCell.Tab.1.center" timestamp="1596682669788">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1491" height="260" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1596682669788" />
+    <state width="1491" height="260" key="GridCell.Tab.1.left" timestamp="1596682669788">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1491" height="260" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1596682669788" />
+    <state width="1491" height="260" key="GridCell.Tab.1.right" timestamp="1596682669788">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1491" height="260" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1596682669788" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1596678588823">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1596678588823" />
+    <state x="396" y="155" key="psd.add.library.dependency.panel.dimension" timestamp="1596542445208">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="396" y="155" key="psd.add.library.dependency.panel.dimension/0.0.1536.824@0.0.1536.824" timestamp="1596542445208" />
+    <state x="511" y="7" key="refactoring.ChangeSignatureDialog" timestamp="1596542996641">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="511" y="7" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1596542996641" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1596681903125">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1596681903125" />
   </component>
 </project>

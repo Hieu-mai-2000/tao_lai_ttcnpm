@@ -2,47 +2,42 @@ package com.example.test_quay;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
+import androidx.recyclerview.widget.DividerItemDecoration;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Context;
 import android.content.Intent;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.webkit.WebResourceError;
-import android.widget.AdapterView;
-import android.widget.EditText;
-import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.Toast;
 
-import com.android.volley.AuthFailureError;
 import com.android.volley.Request;
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
-import com.android.volley.toolbox.StringRequest;
 import com.android.volley.toolbox.Volley;
+import com.example.test_quay.Adapter.Adapter_quay_hang;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    ListView lvQuayHang;
+    //ListView lvQuayHang;
     ArrayList<class_quay_hang> arrayQuayHang;
+    ArrayList<String> arrayURL;
     Adapter_quay_hang adapter;
+
+    RecyclerView recyclerView;
+    RecyclerView.LayoutManager layoutManager;
+
     String IP_port = "http://192.168.1.7:8888/";
     String urlGetDataQuayHang= IP_port + "orderfood/quay_hang.php";
     String urlGetDataKFC= IP_port + "orderfood/list_food/KFC.php";
@@ -60,51 +55,28 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        lvQuayHang = (ListView) findViewById(R.id.gridview);
         arrayQuayHang = new ArrayList<>();
-        adapter = new Adapter_quay_hang(this,R.layout.element_quay_hang,arrayQuayHang);
-        lvQuayHang.setAdapter(adapter);
+        arrayURL = new ArrayList<>();
+        recyclerView = (RecyclerView) findViewById(R.id.gridview);
+        recyclerView.setHasFixedSize(true);
+        layoutManager = new LinearLayoutManager(this,RecyclerView.VERTICAL,false);
+        recyclerView.setLayoutManager(layoutManager);
+        DividerItemDecoration dividerItemDecoration = new DividerItemDecoration(recyclerView.getContext(),DividerItemDecoration.VERTICAL);
+        Drawable drawable = ContextCompat.getDrawable(getApplicationContext(),R.drawable.custom_divider);
+        dividerItemDecoration.setDrawable(drawable);
+        recyclerView.addItemDecoration(dividerItemDecoration);
+        adapter = new Adapter_quay_hang(this,R.layout.element_quay_hang,arrayQuayHang,arrayURL);
+        recyclerView.setAdapter(adapter);
 
 
-        GetListFood();// nhấn vào sẽ hiện ra danh sách món
-
-
+        //GetListFood();// nhấn vào sẽ hiện ra danh sách món
         GetDataQuayHang(urlGetDataQuayHang);
     }
 
-
-
-    private void GetListFood(){
-        lvQuayHang.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent = new Intent(MainActivity.this,list_food.class);
-                switch (i){
-                    case 3:
-                        intent.putExtra("urlGetDataListFood",urlGetDataBBQ);
-                        break;
-                    case 1:
-                        intent.putExtra("urlGetDataListFood",urlGetDataGongCha);
-                        break;
-//                    case 2:
-//                        intent.putExtra("urlGetDataListFood",urlGetDataJOLLIBEE);
-//                        break;
-                    case 0:
-                        intent.putExtra("urlGetDataListFood",urlGetDataKFC);
-                        break;
-//                    case 4:
-//                        intent.putExtra("urlGetDataListFood",urlGetDataMCDONAL);
-//                        break;
-                    case 2:
-                        intent.putExtra("urlGetDataListFood",urlGetDataPIZZA_HUT);
-                        break;
-                }
-                startActivity(intent);
-            }
-        });
-    }
-
     private void GetDataQuayHang(String url){
+
+        arrayURL.add(urlGetDataKFC); arrayURL.add(urlGetDataGongCha); arrayURL.add(urlGetDataPIZZA_HUT); arrayURL.add(urlGetDataBBQ);
+        adapter.notifyDataSetChanged();
 
         RequestQueue requestQueue = Volley.newRequestQueue(this);
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, url, null,
@@ -132,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
                 new Response.ErrorListener() {
                     @Override
                     public void onErrorResponse(VolleyError error) {
-                        Toast.makeText(MainActivity.this, "Loi", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, error.toString().trim(), Toast.LENGTH_SHORT).show();
                     }
                 }
         );

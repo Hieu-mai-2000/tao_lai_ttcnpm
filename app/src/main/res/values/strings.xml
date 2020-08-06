@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">test_quay</string>
+    <string name="nameoffood">NameOfFood</string>
 </resources>

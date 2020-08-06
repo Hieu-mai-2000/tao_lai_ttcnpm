@@ -16,7 +16,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".Chi_tiet_payment"></activity>
         <activity android:name=".update_quay_hang" />
         <activity android:name=".amin_login" />
         <activity android:name=".login_activity">

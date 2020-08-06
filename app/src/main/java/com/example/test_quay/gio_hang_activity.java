@@ -90,7 +90,7 @@ public class gio_hang_activity extends AppCompatActivity {
             if (resultCode == RESULT_OK) {
                 PaymentConfirmation confirmation = data.getParcelableExtra(PaymentActivity.EXTRA_RESULT_CONFIRMATION);
                 if (confirmation != null) {
-                    Toast.makeText(gio_hang_activity.this,"Cam on da dat hang",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(gio_hang_activity.this,"Cảm ơn đã đặt hàng",Toast.LENGTH_SHORT).show();
                 }
             } else if (resultCode == Activity.RESULT_CANCELED)
                 Toast.makeText(this, "Cancel", Toast.LENGTH_SHORT).show();
@@ -112,7 +112,7 @@ public class gio_hang_activity extends AppCompatActivity {
             String ghichu = data_gio_hang.getString(4);
             String hinh_anh = data_gio_hang.getString(5);
             array_gio_hang.add(new class_gio_hang(id,ten,gia*soluongdat,soluongdat,ghichu,hinh_anh));
-            amount += 100;
+            amount += data_gio_hang.getInt(2);
         }
         return amount;
     }
