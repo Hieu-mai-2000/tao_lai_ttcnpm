@@ -2,6 +2,7 @@ package com.example.test_quay;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -14,8 +15,10 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.GridView;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.button.MaterialButton;
 import com.paypal.android.sdk.payments.PayPalConfiguration;
 import com.paypal.android.sdk.payments.PayPalPayment;
 import com.paypal.android.sdk.payments.PayPalService;
@@ -31,10 +34,12 @@ public class gio_hang_activity extends AppCompatActivity {
 
     Button ThanhToan;
     ListView lvGioHang;
+    TextView tongTien;
     ArrayList<class_gio_hang> array_gio_hang;
     Adapter_gio_hang adapter;
     Database database;
     //Paypal payment
+    private static final int usd = 22000;
     private static final int PAYPAL_REQUEST_CODE = 7777;
     static PayPalConfiguration config = new PayPalConfiguration()
             .environment(PayPalConfiguration.ENVIRONMENT_SANDBOX)
@@ -58,16 +63,15 @@ public class gio_hang_activity extends AppCompatActivity {
         anhxa();
         GetDataGioHang();
         adapter.notifyDataSetChanged();
+        tongTien.setText(String.valueOf(adapter.getMoney()));
 
 
         ThanhToan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Toast.makeText(gio_hang_activity.this, "thanh toán bằng gì,và xác nhận", Toast.LENGTH_SHORT).show();
                 database.QueryData("DELETE  FROM gio_hang");
                 adapter.notifyDataSetChanged();
-                int money = GetDataGioHang();
-                if(money > 0) Amount = Integer.toString(money);
+                Amount = String.valueOf(Float.parseFloat(String.valueOf(tongTien.getText())) / usd);
                 processPayment();
 
             }
@@ -99,9 +103,8 @@ public class gio_hang_activity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
     }
 
-    private  int GetDataGioHang(){
+    private  void GetDataGioHang(){
         //select data
-        int amount = 1;
         Cursor data_gio_hang = database.GetData("SELECT * FROM gio_hang");
         array_gio_hang.clear();
         while (data_gio_hang.moveToNext()){
@@ -112,9 +115,7 @@ public class gio_hang_activity extends AppCompatActivity {
             String ghichu = data_gio_hang.getString(4);
             String hinh_anh = data_gio_hang.getString(5);
             array_gio_hang.add(new class_gio_hang(id,ten,gia*soluongdat,soluongdat,ghichu,hinh_anh));
-            amount += data_gio_hang.getInt(2);
         }
-        return amount;
     }
 
     public void DialogXoaMonAn(final String monan, final int id){
@@ -123,11 +124,11 @@ public class gio_hang_activity extends AppCompatActivity {
         dialogXoa.setPositiveButton("Có", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialogInterface, int i) {
-
                 database.QueryData("DELETE  FROM gio_hang WHERE Id = '"+ id +"'");
                 Toast.makeText(gio_hang_activity.this, "Đã Xóa:" + monan, Toast.LENGTH_SHORT).show();
                 adapter.notifyDataSetChanged();
                 GetDataGioHang();
+                tongTien.setText(String.valueOf(adapter.getMoney()));
             }
         });
         dialogXoa.setNegativeButton("không", new DialogInterface.OnClickListener() {
@@ -148,6 +149,7 @@ public class gio_hang_activity extends AppCompatActivity {
         adapter = new Adapter_gio_hang(this,R.layout.element_gio_hang,array_gio_hang);
         lvGioHang.setAdapter(adapter);
         ThanhToan = (Button) findViewById(R.id.gio_hang_thanh_toan);
+        tongTien = (TextView) findViewById(R.id.tong_tien);
     }
 
 }

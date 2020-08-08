@@ -38,5 +38,5 @@ dependencies {
     implementation 'com.miguelcatalan:materialsearchview:1.4.0' // search func
     implementation 'com.android.support:cardview-v7:28.0.0'
     implementation 'com.android.support:recyclerview-v7:28.0.0'
-
+    implementation 'com.cepheuen.elegant-number-button:lib:1.0.2'
 }

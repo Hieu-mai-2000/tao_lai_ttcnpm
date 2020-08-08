@@ -17,19 +17,24 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.cepheuen.elegantnumberbutton.view.ElegantNumberButton;
+import com.google.android.material.appbar.CollapsingToolbarLayout;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
 public class chi_tiet_food_activity extends AppCompatActivity {
 
+    CollapsingToolbarLayout toolbarLayout;
 
-    ImageView image_monan,image_nut_tang,image_nut_giam;
+    ImageView image_monan;
     TextView tenmon,mota,gia,soluong;
-    EditText ghichu,orderfoodED;
+    EditText ghichu; //,orderfoodED
     String link_hinh_anh_food;
-    Button datHang;
+    FloatingActionButton datHang;
     Database database;
+    ElegantNumberButton soluong_dat;
     ArrayList<class_gio_hang> arrayGioHang = new ArrayList<class_gio_hang>();
 
     @Override
@@ -48,13 +53,18 @@ public class chi_tiet_food_activity extends AppCompatActivity {
                 String ten_mon = tenmon.getText().toString().trim();
                 String ghi_chu= ghichu.getText().toString().trim();
                 int  gia_tien = Integer.valueOf((String) gia.getText());
-                int so_luong_dat = Integer.valueOf(String.valueOf(orderfoodED.getText()));
+                int so_luong_dat = Integer.valueOf(String.valueOf(soluong_dat.getNumber()));
                 database.QueryData("INSERT INTO gio_hang VALUES(null,'"+ten_mon+"','"+gia_tien+"','"+so_luong_dat+"','"+ghi_chu+"','"+link_hinh_anh_food+"')");
 
             }
         });
 
-        TangGiam();
+        soluong_dat.setOnClickListener(new ElegantNumberButton.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                soluong.setText(listFood.getSoluong() - Integer.valueOf(String.valueOf(soluong_dat.getNumber())) + "");
+            }
+        });
     }
 
     private void anhxa(){
@@ -66,15 +76,17 @@ public class chi_tiet_food_activity extends AppCompatActivity {
         // arrayGioHang = new ArrayList<>();
 
         image_monan         =(ImageView) findViewById(R.id.activity_CHiTietFood_hinhanh_food);
-        image_nut_tang      =(ImageView) findViewById(R.id.activity_CHiTietFood_image_tang);
-        image_nut_giam      =(ImageView) findViewById(R.id.activity_CHiTietFood_image_giam);
         tenmon              =(TextView) findViewById(R.id.activity_CHiTietFood_ten_mon);
         mota                =(TextView) findViewById(R.id.activity_CHiTietFood_mo_ta);
         gia                 =(TextView) findViewById(R.id.activity_CHiTietFood_gia_tien);
         soluong             =(TextView) findViewById(R.id.activity_CHiTietFood_food_con_lai);
         ghichu              = (EditText) findViewById(R.id.activity_CHiTietFood_ghi_chu);
-        orderfoodED         = (EditText) findViewById(R.id.activity_CHiTietFood_number_order);
-        datHang             = (Button) findViewById(R.id.activity_CHiTietFood_dat_hang);
+        datHang             = (FloatingActionButton) findViewById(R.id.activity_CHiTietFood_dat_hang);
+        soluong_dat         = (ElegantNumberButton) findViewById(R.id.activity_CHiTietFood_number_order);
+
+        toolbarLayout       = (CollapsingToolbarLayout) findViewById(R.id.collapsing);
+        toolbarLayout.setCollapsedTitleTextAppearance(R.style.CollapsapedToolbar);
+        toolbarLayout.setExpandedTitleTextAppearance(R.style.ExpandedAppear);
     }
 
     private void dong_bo_du_lieu(){
@@ -85,7 +97,6 @@ public class chi_tiet_food_activity extends AppCompatActivity {
         //mota.setText(); chua co them vo
         gia.setText(listFood.getGia()+"");
         soluong.setText(listFood.getSoluong()+"");
-        orderfoodED.setText("1");
         link_hinh_anh_food = listFood.getHinhanh();
 
     }
@@ -107,24 +118,6 @@ public class chi_tiet_food_activity extends AppCompatActivity {
 
         }
         return super.onOptionsItemSelected(item);
-    }
-
-    // dùng để tác động vào nút tăng và giảm
-    private void TangGiam(){
-        image_nut_tang.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(Integer.valueOf(String.valueOf(orderfoodED.getText()))<Integer.parseInt(soluong.getText()+""))
-                    orderfoodED.setText(String.valueOf(Integer.valueOf(orderfoodED.getText()+"")+1));
-            }
-        });
-        image_nut_giam.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if(Integer.valueOf(String.valueOf(orderfoodED.getText()))>1)
-                    orderfoodED.setText(String.valueOf(Integer.valueOf(orderfoodED.getText()+"")-1));
-            }
-        });
     }
 
 }
